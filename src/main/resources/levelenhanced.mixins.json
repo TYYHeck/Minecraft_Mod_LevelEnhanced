@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "package": "com.gzh.levelenhanced.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "ExperienceOrbPickupMixin",
+    "HungerMixin",
+    "LivingEntityMixin"
+  ],
+  "server": [
+    "MiningSpeedMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+	}
+}

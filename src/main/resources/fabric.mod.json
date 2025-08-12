@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "levelenhanced",
+	"version": "${version}",
+	"name": "LevelEnhanced",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/levelenhanced/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.gzh.LevelEnhanced"
+		],
+		"client": [
+			"com.gzh.LevelEnhancedClient"
+		],
+		"fabric-datagen": [
+			"com.gzh.LevelEnhancedDataGenerator"
+		]
+	},
+	"mixins": [
+		"levelenhanced.mixins.json",
+		{
+			"config": "levelenhanced.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

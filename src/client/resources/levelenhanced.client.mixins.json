@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "com.gzh.levelenhanced.mixin.client",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "MiningSpeedMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+	}
+}
